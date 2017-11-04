@@ -1,6 +1,4 @@
-<div *ngFor="let course of _currentCourses" style="padding: 20px;">
     <i class="fa fa-caret-square-o-right" aria-hidden="true" style="background: green;" *ngIf="course.status == 'Completed'"></i> 
     <i class="fa fa-caret-square-o-right" aria-hidden="true" style="background: orange;" *ngIf="course.status == 'In Progress'"></i> 
     <i class="fa fa-caret-square-o-right" aria-hidden="true" style="background: gray;" *ngIf="course.status == 'Yet to Start'"></i> 
     <span>{{course.Name}}</span>
-</div>

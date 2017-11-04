@@ -21,6 +21,7 @@ export class ModulesComponent implements OnInit {
   _paginationObj : ModulePagination;
   _currentModule : Module;
   _moduleName : string;
+  _courses : Course[];
 
   constructor(private _moduleService : ModuleService, private _moduleSubject : ModulesPaginationService,
   private _courseService : CoursesService) { }
@@ -53,6 +54,7 @@ export class ModulesComponent implements OnInit {
       console.log('modules and courses for the filter---->'+JSON.stringify(mod[0]));
       this._currentModule = mod[0];
       this._courseService.setCourses(mod[0].courses);
+      this._courses = mod[0].courses;
     });
   }
 

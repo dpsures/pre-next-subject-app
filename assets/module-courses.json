@@ -1,0 +1,41 @@
+[
+    {
+        "moduleSeqNbr" : 1,
+        "moduleId" : "Part 1",
+        "moduleName" : "Angular - Cli, Decorators",
+        "status" : "In Progress",
+        "courses" : [
+            {"Id" : 1, "Name" : "Comment line interface", "duration" : "20 mins","status" : "Completed"},
+            {"Id" : 2, "Name" : "Decorators - Part 1", "duration" : "10 mins","status" : "Completed"},
+            {"Id" : 3, "Name" : "Decorators - Part 2", "duration" : "30 mins","status" : "Completed"},
+            {"Id" : 4, "Name" : "Decorators - Part 3", "duration" : "40 mins","status" : "Completed"},
+            {"Id" : 5, "Name" : "Decorators - Part 4", "duration" : "50 mins","status" : "Completed"}
+        ]
+    },
+    {
+        "moduleSeqNbr" : 2,
+        "moduleId" : "Part 2",
+        "moduleName" : "Angular - Modules, Components",
+        "status" : "Yet to start",
+        "courses" : [
+            {"Id" : 1, "Name" : "NgModule Decleration", "duration" : "20 mins","status" : "Completed"},
+            {"Id" : 2, "Name" : "Export Keyword", "duration" : "10 mins","status" : "Completed"},
+            {"Id" : 3, "Name" : "Component driven development", "duration" : "30 mins","status" : "In Progress"},
+            {"Id" : 4, "Name" : "Component - Selector", "duration" : "40 mins","status" : "Yet to Start"},
+            {"Id" : 5, "Name" : "Component decleration", "duration" : "50 mins","status" : "Yet to Start"}
+        ]
+    },
+    {
+        "moduleSeqNbr" : 3,
+        "moduleId" : "Part 3",
+        "moduleName" : "Angular - Routing, Service",
+        "status" : "Yet to start",
+        "courses" : [
+            {"Id" : 1, "Name" : "Router & Routes", "duration" : "20 mins","status" : "Yet to Start"},
+            {"Id" : 2, "Name" : "Router Module app", "duration" : "10 mins","status" : "Yet to Start"},
+            {"Id" : 3, "Name" : "Injectable services", "duration" : "30 mins","status" : "Yet to Start"},
+            {"Id" : 4, "Name" : "Life cycle hook", "duration" : "40 mins","status" : "Yet to Start"},
+            {"Id" : 5, "Name" : "RouterLink and Navigate", "duration" : "50 mins","status" : "Yet to Start"}
+        ]
+    }
+]

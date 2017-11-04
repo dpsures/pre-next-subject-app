@@ -2,6 +2,6 @@
     <span>{{_moduleName}}</span>
 </div>
 
-<div fxLayout="row" fxLayoutAlign="start" style="padding: 20px;">
-    <course></course>
+<div *ngFor="let course of _courses" fxLayout="row" style="padding: 20px;">
+    <course [course]="course"></course>
 </div>

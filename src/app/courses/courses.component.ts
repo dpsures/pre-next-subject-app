@@ -1,6 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CoursesService } from "./courses.service";
-import { Subscription } from "rxjs/Subscription";
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Course } from "../shared/model/courses";
 
 @Component({
@@ -10,24 +8,17 @@ import { Course } from "../shared/model/courses";
 })
 export class CoursesComponent implements OnInit, OnDestroy {
 
-  _watcher : Subscription;
-  _currentCourses : Course[];
+  @Input()
+  course: Course;
 
-  constructor(private _courseService : CoursesService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.getCourses();
-  }
-
-  getCourses(){
-    this._watcher = this._courseService.getCourses()
-    .subscribe(courses => {
-      this._currentCourses = courses;
-    });
+    
   }
 
   ngOnDestroy() {
-    if(!!this._watcher) this._watcher.unsubscribe();
+    
   }
 
 }
