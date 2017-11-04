@@ -1,0 +1,20 @@
+<div fxLayout="row" style="padding: 20px;">
+  <mat-card class="mat-elevation-z8">
+    <div fxLayout="row">
+      <span style="font-size: 12px;font-weight: bold;">Angular Framework @Latest(version 4)</span>
+    </div>
+
+    <div fxLayout="row" style="font-size: 10px;">
+      <p>This modules contains all the concepts covered for latest angular framework 4</p>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="20px" style="padding: 20px;">
+      <button mat-raised-button color="accent">View</button>
+      <button mat-raised-button color="warn" [routerLink]="['/learning/courses']" (click)="loadCourses()">Continue</button>
+    </div>
+
+    <div fxLayout="row" style="font-size: 30px;font-weight: bold;" fxLayoutAlign="center">
+        <span>In Progress</span>
+      </div>
+  </mat-card>
+</div>

@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'learning-root',
+  selector: 'learning-system',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'learning';
+export class AppComponent implements OnInit{
+  
+  constructor(private _router : Router){}
+
+  ngOnInit() {
+    this._router.navigate(['/learning/dashboard']);
+  }
 }

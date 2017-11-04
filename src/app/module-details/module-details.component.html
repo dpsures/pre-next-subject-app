@@ -1,0 +1,16 @@
+<div fxLayout="row" style="padding: 20px;">
+  <div fxLayout="row" fxLayoutAlign="start">
+    <a [routerLink]="['/learning/dashboard']" style="font-size: 10px;">Back to Dashboard</a>
+  </div>
+
+  <div fxFlex fxLayout="row" fxLayoutAlign="end" fxLayoutGap="20px" style="padding: 20px;">
+    <button mat-raised-button (click)="PreviousModule()" *ngIf="_showPrevious">Previous</button>
+    <button mat-raised-button color="primary" (click)="nextModule()" *ngIf="_showNext">Next</button>
+  </div>
+</div>
+
+<div fxLayout="row" style="padding: 20px;" fxLayoutAlign="center">
+  <mat-card class="mat-elevation-z8">
+    <module></module>
+  </mat-card>
+</div>
